@@ -1,0 +1,42 @@
+@import "variables";
+
+.navbar {
+  padding: 2rem;
+  margin-bottom: 4rem;
+  .bmw-search {
+    height: 5rem;
+    width: 30rem;
+
+  }
+  .navbar-brand {
+    margin-right: 3rem;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    color: $color-default;
+    font-weight: 500;
+  }
+
+  .nav-item {
+    font-size: 1.4rem;
+  }
+  .btn-bmw-search {
+    border-color: $color-default;
+    color: $color-default;
+    height: 5rem;
+    width: 8rem;
+
+    &:hover, &:focus, &:active {
+      background-color: transparent;
+      border-color: $color-default !important;
+      color: $color-default !important;
+      box-shadow: none;
+    }
+  }
+}
+
+.nav-item{
+
+  .nav-link{
+    cursor: pointer;
+  }
+}
