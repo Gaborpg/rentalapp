@@ -1,0 +1,68 @@
+@import 'variables';
+
+#rentalDetails {
+  .upper-section {
+    img {
+      width: 100%;
+    }
+
+    margin-bottom: 3rem;
+  }
+
+  .details-section {
+    color: $color-default;
+    .rental {
+      &-type {
+        font-size: 1.4rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin: 0;
+      }
+
+      &-title {
+        margin-bottom: 5px;
+        font-size: 3.2rem;
+        font-weight: 700;
+      }
+
+      &-city {
+        font-size: 1.4rem;
+        font-weight: 300;
+        margin-bottom: 2rem;
+      }
+
+      &-room-info {
+        margin-bottom: 2rem;
+        font-weight: 300;
+        font-size: 1.6rem;
+
+        span {
+          margin-right: 1rem;
+        }
+
+        i {
+          margin-right: 2px;
+        }
+      }
+
+      &-description {
+        font-weight: 300;
+        margin-bottom: 3rem;
+        font-size: 2rem;
+      }
+
+      &-assets {
+        .title {
+          margin-bottom: 1rem;
+          font-weight: 700;
+          font-size: 2.2rem;
+        }
+        span {
+          display: block;
+          margin-bottom: 1.5rem;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
