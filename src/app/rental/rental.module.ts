@@ -4,8 +4,11 @@ import {RentalListItemComponent} from './rental-list-item/rental-list-item.compo
 import {RentalComponent} from './rental.component';
 import {CommonModule} from '@angular/common';
 import {RentalService} from './shared/rental.service';
-import { RentalDetailComponent } from './rental-detail/rental-detail.component';
+import {RentalDetailComponent} from './rental-detail/rental-detail.component';
 import {RentalRoutingModule} from './rental-routing.module';
+import {HttpClientModule} from '@angular/common/http';
+import {NgPipesModule} from 'ngx-pipes';
+import {UppercasePipe} from '../core/pipes/uppercase.pipe';
 
 @NgModule({
   declarations: [
@@ -13,10 +16,14 @@ import {RentalRoutingModule} from './rental-routing.module';
     RentalListItemComponent,
     RentalComponent,
     RentalDetailComponent,
+    UppercasePipe
+
   ],
   imports: [
     CommonModule,
-    RentalRoutingModule
+    RentalRoutingModule,
+    HttpClientModule,
+    NgPipesModule,
   ],
   providers: [
     RentalService
