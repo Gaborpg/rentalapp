@@ -10,8 +10,7 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     firebase.initializeApp(
       {
-        apiKey: 'AIzaSyC1wMr8ieNuNMfl4mYd7tUyFb1fRaMFM9k',
-        authDomain: 'bmw-rental.firebaseapp.com',
+      
       }
     );
   }
