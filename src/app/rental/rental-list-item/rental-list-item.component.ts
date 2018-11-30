@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {Rental} from '../shared/rental.model';
 
 @Component({
   selector: 'app-rental-list-item',
@@ -6,7 +7,7 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./rental-list-item.component.scss']
 })
 export class RentalListItemComponent implements OnInit {
-  @Input() currentRental: any;
+  @Input() currentRental: Rental[];
 
   constructor() {
   }

@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {RentalService} from './shared/rental.service';
+
 
 @Component({
   selector: 'app-rental',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RentalComponent implements OnInit {
 
-  constructor() { }
+
+  constructor(private rentalService: RentalService) {
+  }
 
   ngOnInit() {
+
   }
+
+  onSave(){
+    this.rentalService.onSave();
+  }
+
 
 }

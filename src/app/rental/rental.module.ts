@@ -10,6 +10,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {NgPipesModule} from 'ngx-pipes';
 import {UppercasePipe} from '../core/pipes/uppercase.pipe';
 import {MapModule} from '../core/map/map.module';
+import {FakedataService} from './shared/fakedata.service';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,7 @@ import {MapModule} from '../core/map/map.module';
     MapModule
   ],
   providers: [
-    RentalService
+    FakedataService
   ]
 })
 export class RentalModule {
