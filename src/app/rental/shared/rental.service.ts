@@ -4,7 +4,6 @@ import {HttpClient} from '@angular/common/http';
 import {FakedataService} from './fakedata.service';
 import {AuthService} from '../../auth/auth.service';
 import {Rental} from './rental.model';
-import {tap} from 'rxjs/operators';
 
 
 @Injectable()
@@ -35,10 +34,8 @@ export class RentalService {
   }
 
   storeServer(servers) {
-    /*
-        const token = this.authService.getToken();
-    */
-    /*return this.httpClient.put(this.configURL + '?auth=' + token, servers);*/
+    const token = this.authService.getToken();
+    return this.httpClient.put(this.configURL + '?auth=' + token, servers);
     return this.httpClient.put(this.configURL, servers);
 
   }

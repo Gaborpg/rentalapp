@@ -1,16 +1,48 @@
 <div class="row justify-content-md-center">
   <div class="col-xs-12 col-sm-10 col-md-8 col-sm-auto col-md-auto">
-    <form (ngSubmit)="onSignIN(f)" #f="ngForm">
-      <div class="form-group">
-        <label for="email">Mail</label>
-        <input type="email" id="email" name="email" ngModel class="form-control">
+    <section id="login">
+      <div class="bwm-form">
+        <div class="row">
+          <div class="col-md-5">
+            <h1>Login</h1>
+            <form (ngSubmit)="onSignIN(f)" #f="ngForm">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email"
+                       class="form-control"
+                       ngModel
+                       id="email"
+                       name="email"
+                >
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password"
+                       ngModel
+                       class="form-control"
+                       id="password"
+                       name="password"
+                >
+              </div>
+              <div class="btn-separate">
+                <button type="submit" class="btn-lg btn btn-success btn-pad-right">Submit</button>
+                <div class="separate"></div>
+                <button type="click" class="btn-lg btn btn-success btn-pad-left" (click)="test()">Test</button>
+              </div>
+
+            </form>
+          </div>
+          <div class="col-md-6 ml-auto">
+            <div class="image-container">
+              <h2 class="catchphrase">Hundreds of awesome places in reach of few clicks.</h2>
+              <img src="https://picsum.photos/400/300" alt="">
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="form-group">
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" ngModel class="form-control">
-      </div>
-      <button class="btn btn-primary" type="submit">Sign In</button>
-    </form>
+    </section>
+
+
   </div>
 </div>
 

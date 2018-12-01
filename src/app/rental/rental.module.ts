@@ -11,6 +11,8 @@ import {NgPipesModule} from 'ngx-pipes';
 import {UppercasePipe} from '../core/pipes/uppercase.pipe';
 import {MapModule} from '../core/map/map.module';
 import {FakedataService} from './shared/fakedata.service';
+import {Daterangepicker} from 'ng2-daterangepicker';
+import { RentalBookingComponent } from './rental-detail/rental-booking/rental-booking.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import {FakedataService} from './shared/fakedata.service';
     RentalListItemComponent,
     RentalComponent,
     RentalDetailComponent,
-    UppercasePipe
+    UppercasePipe,
+    RentalBookingComponent
 
   ],
   imports: [
@@ -26,8 +29,10 @@ import {FakedataService} from './shared/fakedata.service';
     RentalRoutingModule,
     HttpClientModule,
     NgPipesModule,
-    MapModule
-  ],
+    MapModule,
+    Daterangepicker
+
+],
   providers: [
     FakedataService
   ]

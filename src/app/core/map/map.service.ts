@@ -49,7 +49,7 @@ export class MapService {
   public getGeoLocation(location: string): Observable<any> {
 
     if (this.isLocationCached(location)) {
-      return of(this.locationCache(this.camelize(location)));
+      return of(this.locationCache[this.camelize(location)]);
     } else {
       return this.geocodeLocation(location);
     }

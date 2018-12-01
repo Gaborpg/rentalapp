@@ -17,9 +17,5 @@ export class RentalComponent implements OnInit {
 
   }
 
-  onSave(){
-    this.rentalService.onSave();
-  }
-
 
 }
